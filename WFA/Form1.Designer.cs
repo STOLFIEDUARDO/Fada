@@ -69,6 +69,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.tcbFadas = new System.Windows.Forms.TabControl();
             this.tabCadastroRapido = new System.Windows.Forms.TabPage();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtFamiliaMeliodas = new System.Windows.Forms.TextBox();
             this.chkMulher02 = new System.Windows.Forms.CheckBox();
             this.txtNome02 = new System.Windows.Forms.TextBox();
             this.cbCorRapido = new System.Windows.Forms.ComboBox();
@@ -85,8 +87,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.txtFamiliaMeliodas = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.tabCadastroFada.SuspendLayout();
             this.tabListaFada.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -377,6 +377,7 @@
             this.button3.TabIndex = 62;
             this.button3.Text = "Cancelar";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // tabListaFada
             // 
@@ -581,6 +582,24 @@
             this.tabCadastroRapido.TabIndex = 2;
             this.tabCadastroRapido.Text = "Cadastro Rapido";
             // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.BackColor = System.Drawing.Color.Black;
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Location = new System.Drawing.Point(24, 261);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(39, 13);
+            this.label19.TabIndex = 82;
+            this.label19.Text = "Familia";
+            // 
+            // txtFamiliaMeliodas
+            // 
+            this.txtFamiliaMeliodas.Location = new System.Drawing.Point(69, 258);
+            this.txtFamiliaMeliodas.Name = "txtFamiliaMeliodas";
+            this.txtFamiliaMeliodas.Size = new System.Drawing.Size(100, 20);
+            this.txtFamiliaMeliodas.TabIndex = 81;
+            // 
             // chkMulher02
             // 
             this.chkMulher02.AutoSize = true;
@@ -644,6 +663,7 @@
             this.button9.TabIndex = 13;
             this.button9.Text = "Cancelar";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button10
             // 
@@ -744,6 +764,7 @@
             this.button8.TabIndex = 1;
             this.button8.Text = "Cancelar";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button4
             // 
@@ -756,24 +777,6 @@
             this.button4.Text = "Salvar";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // txtFamiliaMeliodas
-            // 
-            this.txtFamiliaMeliodas.Location = new System.Drawing.Point(69, 258);
-            this.txtFamiliaMeliodas.Name = "txtFamiliaMeliodas";
-            this.txtFamiliaMeliodas.Size = new System.Drawing.Size(100, 20);
-            this.txtFamiliaMeliodas.TabIndex = 81;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Black;
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Location = new System.Drawing.Point(24, 261);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(39, 13);
-            this.label19.TabIndex = 82;
-            this.label19.Text = "Familia";
             // 
             // Form1
             // 

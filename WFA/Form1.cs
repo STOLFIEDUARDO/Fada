@@ -53,6 +53,7 @@ namespace WFA
                        MessageBox.Show("Alterado com sucesso");
                        Fadas = string.Empty;
                   }
+                  LimparCampos();
                   
                   tcbFadas.SelectedIndex = 0;
               }
@@ -160,7 +161,7 @@ namespace WFA
                     MessageBox.Show("Alterado com sucesso");
                     Fadas = string.Empty;
                 }
-
+                LimparCampos01();
                 tcbFadas.SelectedIndex = 0;
             }
             catch (Exception ex)
@@ -268,7 +269,7 @@ namespace WFA
                     MessageBox.Show("Alterado com sucesso");
                     Fadas = string.Empty;
                 }
-
+                LimparCampos02();
                 tcbFadas.SelectedIndex = 0;
             }
 
@@ -295,7 +296,54 @@ namespace WFA
 
 
 
+        private void LimparCampos()
+        {
+            txtNome.Text = "";
+            txtFamilia.Text = "";
+            cbCor.SelectedIndex = -1;
+            cbCorAsa.SelectedIndex = -1;
+            txtTamanhoAsa.Text = "";
+            chkAsinhasDeFrango.Checked = false;
+            chkMulherzinha.Checked = false;
+            cbFazBarulho.SelectedIndex = -1;
+            cbElemento.SelectedIndex = -1;
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            LimparCampos();
+            tcbFadas.SelectedIndex = 0;
+        }
+
+        private void LimparCampos01()
+        {
+            txtNomeRapido.Text = "";
+            txtFamiliaRapido.Text = "";
+            cbCorRapido.SelectedIndex = -1;
+         
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            LimparCampos01();
+            tcbFadas.SelectedIndex = 0;
+        }
+
+
+
+        private void LimparCampos02()
+        {
+            txtNome02.Text = "";
+            txtFamiliaMeliodas.Text = "";
+            chkMulher02.Checked = false;
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            LimparCampos02();
+            tcbFadas.SelectedIndex = 0;
+        }
 
 
 
